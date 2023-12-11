@@ -38,10 +38,9 @@ describe("POST /submit-letter PDF Generation", () => {
     const pdfText = pdfData.text;
 
     // Проверка наличия тестовых данных в тексте PDF
-    expect(pdfText).toContain(testData.email);
     expect(pdfText).toContain(testData.name);
-    // expect(pdfText).toContain(testData.letterText);
-    // expect(pdfText).toContain(testData.momentGift);
-    // expect(pdfText).toContain(testData.signature);
+    expect(pdfText).toContain(testData.letterText);
+    expect(pdfText).toContain(testData.momentGift);
+    expect(pdfText).toContain(testData.signature);
   });
 });
