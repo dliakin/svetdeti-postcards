@@ -7,7 +7,7 @@ services:
       - "3000:3000"
     environment:
       - SMTP_SERVICE=SMTP
-      - SMTP_USER=team@cuvilab.com
-      - SMTP_PASS=Qwe123ewQ!
-      - SMTP_HOST=cpanel9.c.fozzy.com
+      - SMTP_USER=
+      - SMTP_PASS=
+      - SMTP_HOST=
       - SMTP_PORT=465
